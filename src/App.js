@@ -1,10 +1,15 @@
-import logo from "./logo.svg";
+import { Container, AppBar, Typography, Grow, Grid } from "@material-ui/core";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">App</header>
+      <Container maxWidth="lg">
+        <AppBar position="static" color="inherit">
+          <Typography variant="h2" align="center"></Typography>
+          <img src="/images/memories.jpg" alt="memories" height="600" />
+        </AppBar>
+      </Container>
     </div>
   );
 }
